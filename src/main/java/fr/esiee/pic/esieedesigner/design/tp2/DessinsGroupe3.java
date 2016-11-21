@@ -73,6 +73,7 @@ public class DessinsGroupe3 extends CreateurDeForme {
 		.ajouter(basDroite)
 		.ajouter(basGauche);
 		
+		dessinerCadre();
 		dessinerCorp();
         dessinerCheveux();
 		dessinVisage();
