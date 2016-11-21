@@ -74,8 +74,6 @@ public final class EcranPrincipal {
 	 * Initialisation des formes à dessiner
 	 */
 	private void init() {
-		initDemo();
-		
 		// Affichage des dessins du groupe 1
 		DessinsGroupe1 grp1 = new DessinsGroupe1();
 		listDeDessins.add(grp1);
@@ -83,6 +81,9 @@ public final class EcranPrincipal {
 		// Affichage des dessins du groupe 2
 		DessinsGroupe2 grp2 = new DessinsGroupe2();
 		listDeDessins.add(grp2);
+		
+		DessinsGroupe3 grp3 = new DessinsGroupe3();
+		listDeDessins.add(grp3);
 	}
 
 	/**
