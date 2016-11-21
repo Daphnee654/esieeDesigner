@@ -55,20 +55,20 @@ public class DessinsGroupe1 extends CreateurDeForme {
 	 */
 	public void dessinerPiedsJambes() {
 
-		Point PiedGauche1 = new Point(5 * UNITE_VERTICALE, 14 * UNITE_VERTICALE);
-		Point PiedGauche2 = new Point(6 * UNITE_VERTICALE, 13 * UNITE_VERTICALE);
-		Point PiedGauche3 = new Point(7 * UNITE_VERTICALE, 13 * UNITE_VERTICALE);
-		Point PiedGauche4 = new Point(7 * UNITE_VERTICALE, 14 * UNITE_VERTICALE);
+		Point PiedGauche1 = new Point(5 * UNITE_VERTICALE, 16 * UNITE_VERTICALE);
+		Point PiedGauche2 = new Point(6 * UNITE_VERTICALE, 15 * UNITE_VERTICALE);
+		Point PiedGauche3 = new Point(7 * UNITE_VERTICALE, 15 * UNITE_VERTICALE);
+		Point PiedGauche4 = new Point(7 * UNITE_VERTICALE, 16 * UNITE_VERTICALE);
 		
-		Point PiedDroit1 = new Point(7 * UNITE_VERTICALE, 14 * UNITE_VERTICALE);
-		Point PiedDroit2 = new Point(7 * UNITE_VERTICALE, 13 * UNITE_VERTICALE);
-		Point PiedDroit3 = new Point(8 * UNITE_VERTICALE, 13 * UNITE_VERTICALE);
-		Point PiedDroit4 = new Point(9 * UNITE_VERTICALE, 14 * UNITE_VERTICALE);
+		Point PiedDroit1 = new Point(7 * UNITE_VERTICALE, 16 * UNITE_VERTICALE);
+		Point PiedDroit2 = new Point(7 * UNITE_VERTICALE, 15 * UNITE_VERTICALE);
+		Point PiedDroit3 = new Point(8 * UNITE_VERTICALE, 15 * UNITE_VERTICALE);
+		Point PiedDroit4 = new Point(9 * UNITE_VERTICALE, 16 * UNITE_VERTICALE);
 		
-		Point Jupe1 = new Point(3 * UNITE_VERTICALE, 11 * UNITE_VERTICALE);
-		Point Jupe2 = new Point(2 * UNITE_VERTICALE, 13 * UNITE_VERTICALE);
-		Point Jupe3 = new Point(12 * UNITE_VERTICALE, 13 * UNITE_VERTICALE);
-		Point Jupe4 = new Point(11 * UNITE_VERTICALE, 11 * UNITE_VERTICALE);
+		Point Jupe1 = new Point(3 * UNITE_VERTICALE, 13 * UNITE_VERTICALE);
+		Point Jupe2 = new Point(2 * UNITE_VERTICALE, 15 * UNITE_VERTICALE);
+		Point Jupe3 = new Point(12 * UNITE_VERTICALE, 15 * UNITE_VERTICALE);
+		Point Jupe4 = new Point(11 * UNITE_VERTICALE, 13 * UNITE_VERTICALE);
 		
 		
 		demarrerNouveauDessinAvecDesPoints()
