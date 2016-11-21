@@ -45,6 +45,28 @@ public class DessinsGroupe1 extends CreateurDeForme {
 	 */
 	public void dessinerPiedsJambes() {
 		
+		Point PiedGauche1 = new Point(5 * UNITE_VERTICALE, 14 * UNITE_VERTICALE);
+		Point PiedGauche2 = new Point(6 * UNITE_VERTICALE, 13 * UNITE_VERTICALE);
+		Point PiedGauche3 = new Point(7 * UNITE_VERTICALE, 13 * UNITE_VERTICALE);
+		Point PiedGauche4 = new Point(7 * UNITE_VERTICALE, 14 * UNITE_VERTICALE);
+		
+		Point PiedDroit1 = new Point(7 * UNITE_VERTICALE, 14 * UNITE_VERTICALE);
+		Point PiedDroit2 = new Point(7 * UNITE_VERTICALE, 13 * UNITE_VERTICALE);
+		Point PiedDroit3 = new Point(8 * UNITE_VERTICALE, 13 * UNITE_VERTICALE);
+		Point PiedDroit4 = new Point(9 * UNITE_VERTICALE, 14 * UNITE_VERTICALE);
+		
+		demarrerNouveauDessinAvecDesPoints()
+		.ajouter(PiedGauche1)
+		.ajouter(PiedGauche2)
+		.ajouter(PiedGauche3)
+		.ajouter(PiedGauche4)
+		.ajouter(PiedDroit1)
+		.ajouter(PiedDroit2)
+		.ajouter(PiedDroit3)
+		.ajouter(PiedDroit4);
+		
+		
+
 	}
 	
 	/**
