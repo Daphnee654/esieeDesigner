@@ -55,12 +55,19 @@ public class DessinsGroupe1 extends CreateurDeForme {
 	 */
 	public void dessinerPiedsJambes() {
 
-		
+	}
+	
+	/**
+	 * 
+	 */
+	public void dessinerTorseBras() {
 		Point mainGauchePointGauche = new Point(ORIGINE_X * UNITE_HORIZONTALE, (ORIGINE_Y + 11) * UNITE_VERTICALE);
 		Point mainGauchePointCentre = new Point((ORIGINE_X + 1) * UNITE_HORIZONTALE, (ORIGINE_Y + 11) * UNITE_VERTICALE);
 		Point mainGauchePointBas = new Point((ORIGINE_X + 1) * UNITE_HORIZONTALE, (ORIGINE_Y + 12) * UNITE_VERTICALE);
 		Point mainGauchePointDroite = new Point((ORIGINE_X + 2) * UNITE_HORIZONTALE, (ORIGINE_Y + 11) * UNITE_VERTICALE);
 		Point mainGauchePointHaut = new Point((ORIGINE_X + 1) * UNITE_HORIZONTALE, (ORIGINE_Y + 10) * UNITE_VERTICALE);
+		
+		
 		
 		demarrerNouveauDessinAvecDesPoints()
 		.ajouter(mainGauchePointGauche)
@@ -68,13 +75,49 @@ public class DessinsGroupe1 extends CreateurDeForme {
 		.ajouter(mainGauchePointBas)
 		.ajouter(mainGauchePointDroite)
 		.ajouter(mainGauchePointHaut);
-	}
-	
-	/**
-	 * 
-	 */
-	public void dessinerTorseBras() {
+
+
 		
+		Point epauleGaucheGauche = new Point((ORIGINE_X + 3) * UNITE_HORIZONTALE, (ORIGINE_Y + 8) * UNITE_VERTICALE);
+		Point epauleGaucheDroit = new Point((ORIGINE_X + 4) * UNITE_HORIZONTALE, (ORIGINE_Y + 8) * UNITE_VERTICALE);
+		
+		demarrerNouveauDessinAvecDesPoints()
+		.ajouter(epauleGaucheGauche)
+		.ajouter(epauleGaucheDroit);
+		
+		Point epauleDroitGauche = new Point((ORIGINE_X + 10) * UNITE_HORIZONTALE, (ORIGINE_Y + 8) * UNITE_VERTICALE);
+		Point epauleDroitDroit = new Point((ORIGINE_X + 11) * UNITE_HORIZONTALE, (ORIGINE_Y + 8) * UNITE_VERTICALE);
+		
+
+		demarrerNouveauDessinAvecDesPoints()
+		.ajouter(epauleDroitGauche)
+		.ajouter(epauleDroitDroit);
+		
+		
+		
+
+		demarrerNouveauDessinAvecDesPoints()
+		.ajouter(mainGauchePointHaut)
+		.ajouter(epauleGaucheGauche);
+		
+		
+		Point mainDroitePointGauche = new Point(ORIGINE_X * UNITE_HORIZONTALE, (ORIGINE_Y + 11) * UNITE_VERTICALE);
+		Point mainDroitePointCentre = new Point((ORIGINE_X + 1) * UNITE_HORIZONTALE, (ORIGINE_Y + 11) * UNITE_VERTICALE);
+		Point mainDroitePointBas = new Point((ORIGINE_X + 1) * UNITE_HORIZONTALE, (ORIGINE_Y + 12) * UNITE_VERTICALE);
+		Point mainDroitePointDroite = new Point((ORIGINE_X + 2) * UNITE_HORIZONTALE, (ORIGINE_Y + 11) * UNITE_VERTICALE);
+		Point mainDroitePointHaut = new Point((ORIGINE_X + 1) * UNITE_HORIZONTALE, (ORIGINE_Y + 10) * UNITE_VERTICALE);
+		
+		
+		
+		demarrerNouveauDessinAvecDesPoints()
+		.ajouter(mainDroitePointGauche)
+		.ajouter(mainDroitePointCentre)
+		.ajouter(mainDroitePointBas)
+		.ajouter(mainDroitePointDroite)
+		.ajouter(mainDroitePointHaut);
+		
+		
+	
 	}
 	
 	/**
