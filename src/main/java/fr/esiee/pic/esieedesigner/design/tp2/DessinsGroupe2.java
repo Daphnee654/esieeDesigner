@@ -1,5 +1,6 @@
 package fr.esiee.pic.esieedesigner.design.tp2;
 
+import fr.esiee.pic.esieedesigner.api.shapes.Point;
 import fr.esiee.pic.esieedesigner.api.tools.CreateurDeForme;
 
 /**
@@ -9,6 +10,16 @@ import fr.esiee.pic.esieedesigner.api.tools.CreateurDeForme;
  *
  */
 public class DessinsGroupe2 extends CreateurDeForme {
+	
+	/**
+	 * Offset d'origine
+	 */
+	private static final double ORIGINE = 700;
+	
+	/**
+	 * Largeur d'une case
+	 */
+	private static final double CASE = 25;
 
 	@Override
 	public void dessiner() {
@@ -16,5 +27,6 @@ public class DessinsGroupe2 extends CreateurDeForme {
 		// Pensez à désactiver les dessins de la démo 
 		// en commentant initDemo dans le méthode init()de la classe fr.esiee.pic.esieedesigner.ui.scene.EcranPrincipal
 	}
+
 
 }
