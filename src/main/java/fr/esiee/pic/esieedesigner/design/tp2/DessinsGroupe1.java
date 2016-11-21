@@ -65,7 +65,12 @@ public class DessinsGroupe1 extends CreateurDeForme {
 	 * 
 	 */
 	public void dessinerCheveux() {
+		Point point1 = new Point(7 * UNITE_HORIZONTALE, 2 * UNITE_VERTICALE);
+		Point point2 = new Point(11 * UNITE_HORIZONTALE, 2 * UNITE_VERTICALE);
 		
+		demarrerNouveauDessinAvecDesPoints()
+		.ajouter(point1)
+		.ajouter(point2);
 	}
 
 }
