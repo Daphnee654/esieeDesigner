@@ -41,6 +41,7 @@ public class DessinsGroupe3 extends CreateurDeForme {
 		// Pensez à désactiver les dessins de la démo 
 		// en commentant initDemo dans le méthode init()de la classe fr.esiee.pic.esieedesigner.ui.scene.EcranPrincipal
 		
+			
 		Point hautGauche = new Point(BASE_GAUCHE, BASE_HAUT);
 		Point hautDroit = new Point(BASE_DROITE, BASE_HAUT);
 		Point basGauche = new Point(BASE_GAUCHE, BASE_BAS);
@@ -52,7 +53,41 @@ public class DessinsGroupe3 extends CreateurDeForme {
 		.ajouter(basDroite)
 		.ajouter(basGauche);
 
-
+	
+	}
+	
+	/**
+	 * Methode pour dessiner le corp et les doides
+	 */
+	public void dessinerCorp() {
+		Point p1 = new Point(1,4);/*
+		Point p2 = new Point(1,4);
+		Point p3 = new Point();
+		Point p4 = new Point();
+		Point p5 = new Point();
+		Point p6 = new Point();
+		Point p7 = new Point();
+		Point p8 = new Point();
+		Point p9 = new Point();
+		Point p10 = new Point();
+		Point p11 = new Point();
+		Point p12 = new Point();
+		Point p13 = new Point();
+		Point p14 = new Point();
+		Point p15 = new Point();
+		Point p16 = new Point();
+		Point p17 = new Point();
+		Point p18 = new Point();
+		Point p19 = new Point();
+		Point p20 = new Point();
+		Point p21 = new Point();
+		Point p22 = new Point();
+		Point p23 = new Point();
+		Point p24 = new Point();
+		Point p25 = new Point();
+		Point p26 = new Point();
+		Point p27 = new Point();
+		Point p28 = new Point();*/
 	}
 
 }
