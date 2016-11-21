@@ -19,6 +19,16 @@ public class DessinsGroupe1 extends CreateurDeForme {
 	 * Pas de dessin verticale
 	 */
 	private static final double UNITE_VERTICALE = 25;
+	
+	/**
+	 * Coordonnées X de l'origine
+	 */
+	private static final double ORIGINE_X = 2;
+	
+	/**
+	 * Coordonnées Y de l'origine
+	 */
+	private static final double ORIGINE_Y = 2;
 
 	@Override
 	public void dessiner() {
@@ -30,9 +40,9 @@ public class DessinsGroupe1 extends CreateurDeForme {
 		dessinerVisage();
 		dessinerCheveux();
 		
-		Point origine = new Point(2 * UNITE_VERTICALE, 2 * UNITE_VERTICALE);
-		Point origine2 = new Point(2 * UNITE_HORIZONTALE, 3 * UNITE_VERTICALE);
-		Point origine3 = new Point(3 * UNITE_HORIZONTALE, 2 * UNITE_VERTICALE);
+		Point origine = new Point(ORIGINE_X * UNITE_HORIZONTALE, ORIGINE_Y * UNITE_VERTICALE);
+		Point origine2 = new Point(ORIGINE_X * UNITE_HORIZONTALE, (ORIGINE_Y + 1) * UNITE_VERTICALE);
+		Point origine3 = new Point((ORIGINE_X + 1) * UNITE_HORIZONTALE, ORIGINE_Y * UNITE_VERTICALE);
 		
 		demarrerNouveauDessinAvecDesPoints()
 		.ajouter(origine)
@@ -44,7 +54,20 @@ public class DessinsGroupe1 extends CreateurDeForme {
 	 * 
 	 */
 	public void dessinerPiedsJambes() {
+
 		
+		Point mainGauchePointGauche = new Point(ORIGINE_X * UNITE_HORIZONTALE, (ORIGINE_Y + 11) * UNITE_VERTICALE);
+		Point mainGauchePointCentre = new Point((ORIGINE_X + 1) * UNITE_HORIZONTALE, (ORIGINE_Y + 11) * UNITE_VERTICALE);
+		Point mainGauchePointBas = new Point((ORIGINE_X + 1) * UNITE_HORIZONTALE, (ORIGINE_Y + 12) * UNITE_VERTICALE);
+		Point mainGauchePointDroite = new Point((ORIGINE_X + 2) * UNITE_HORIZONTALE, (ORIGINE_Y + 11) * UNITE_VERTICALE);
+		Point mainGauchePointHaut = new Point((ORIGINE_X + 1) * UNITE_HORIZONTALE, (ORIGINE_Y + 10) * UNITE_VERTICALE);
+		
+		demarrerNouveauDessinAvecDesPoints()
+		.ajouter(mainGauchePointGauche)
+		.ajouter(mainGauchePointCentre)
+		.ajouter(mainGauchePointBas)
+		.ajouter(mainGauchePointDroite)
+		.ajouter(mainGauchePointHaut);
 	}
 	
 	/**
