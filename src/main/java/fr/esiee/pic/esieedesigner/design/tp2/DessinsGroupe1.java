@@ -1,5 +1,6 @@
 package fr.esiee.pic.esieedesigner.design.tp2;
 
+import fr.esiee.pic.esieedesigner.api.shapes.Couleur;
 import fr.esiee.pic.esieedesigner.api.shapes.Point;
 import fr.esiee.pic.esieedesigner.api.tools.CreateurDeForme;
 
@@ -55,20 +56,20 @@ public class DessinsGroupe1 extends CreateurDeForme {
 	 */
 	public void dessinerPiedsJambes() {
 
-		Point PiedGauche1 = new Point(5 * UNITE_VERTICALE, 16 * UNITE_VERTICALE);
-		Point PiedGauche2 = new Point(6 * UNITE_VERTICALE, 15 * UNITE_VERTICALE);
-		Point PiedGauche3 = new Point(7 * UNITE_VERTICALE, 15 * UNITE_VERTICALE);
-		Point PiedGauche4 = new Point(7 * UNITE_VERTICALE, 16 * UNITE_VERTICALE);
+		Point PiedGauche1 = new Point(7 * UNITE_VERTICALE, 16 * UNITE_VERTICALE);
+		Point PiedGauche2 = new Point(8 * UNITE_VERTICALE, 15 * UNITE_VERTICALE);
+		Point PiedGauche3 = new Point(9 * UNITE_VERTICALE, 15 * UNITE_VERTICALE);
+		Point PiedGauche4 = new Point(9 * UNITE_VERTICALE, 16 * UNITE_VERTICALE);
 		
-		Point PiedDroit1 = new Point(7 * UNITE_VERTICALE, 16 * UNITE_VERTICALE);
-		Point PiedDroit2 = new Point(7 * UNITE_VERTICALE, 15 * UNITE_VERTICALE);
-		Point PiedDroit3 = new Point(8 * UNITE_VERTICALE, 15 * UNITE_VERTICALE);
-		Point PiedDroit4 = new Point(9 * UNITE_VERTICALE, 16 * UNITE_VERTICALE);
+		Point PiedDroit1 = new Point(9 * UNITE_VERTICALE, 16 * UNITE_VERTICALE);
+		Point PiedDroit2 = new Point(9 * UNITE_VERTICALE, 15 * UNITE_VERTICALE);
+		Point PiedDroit3 = new Point(10 * UNITE_VERTICALE, 15 * UNITE_VERTICALE);
+		Point PiedDroit4 = new Point(11 * UNITE_VERTICALE, 16 * UNITE_VERTICALE);
 		
-		Point Jupe1 = new Point(3 * UNITE_VERTICALE, 13 * UNITE_VERTICALE);
-		Point Jupe2 = new Point(2 * UNITE_VERTICALE, 15 * UNITE_VERTICALE);
-		Point Jupe3 = new Point(12 * UNITE_VERTICALE, 15 * UNITE_VERTICALE);
-		Point Jupe4 = new Point(11 * UNITE_VERTICALE, 13 * UNITE_VERTICALE);
+		Point Jupe1 = new Point(5 * UNITE_VERTICALE, 13 * UNITE_VERTICALE);
+		Point Jupe2 = new Point(4 * UNITE_VERTICALE, 15 * UNITE_VERTICALE);
+		Point Jupe3 = new Point(14 * UNITE_VERTICALE, 15 * UNITE_VERTICALE);
+		Point Jupe4 = new Point(13 * UNITE_VERTICALE, 13 * UNITE_VERTICALE);
 		
 		
 		
@@ -86,7 +87,8 @@ public class DessinsGroupe1 extends CreateurDeForme {
 		.ajouter(Jupe1)
 		.ajouter(Jupe2)
 		.ajouter(Jupe3)
-		.ajouter(Jupe4);
+		.ajouter(Jupe4)
+		.couleurDeFond(Couleur.GRIS);
 	}
 	
 	/**
