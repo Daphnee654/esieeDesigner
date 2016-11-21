@@ -1,5 +1,6 @@
 package fr.esiee.pic.esieedesigner.design.tp2;
 
+import fr.esiee.pic.esieedesigner.api.shapes.Point;
 import fr.esiee.pic.esieedesigner.api.tools.CreateurDeForme;
 
 /**
@@ -9,6 +10,15 @@ import fr.esiee.pic.esieedesigner.api.tools.CreateurDeForme;
  *
  */
 public class DessinsGroupe1 extends CreateurDeForme {
+	/**
+	 * Pas de dessin horizontale
+	 */
+	private static final double UNITE_HORIZONTALE = 25;
+	
+	/**
+	 * Pas de dessin verticale
+	 */
+	private static final double UNITE_VERTICALE = 25;
 
 	@Override
 	public void dessiner() {
@@ -19,20 +29,41 @@ public class DessinsGroupe1 extends CreateurDeForme {
 		dessinerTorseBras();
 		dessinerVisage();
 		dessinerCheveux();
+		
+		Point origine = new Point(2 * UNITE_VERTICALE, 2 * UNITE_VERTICALE);
+		Point origine2 = new Point(2 * UNITE_HORIZONTALE, 3 * UNITE_VERTICALE);
+		Point origine3 = new Point(3 * UNITE_HORIZONTALE, 2 * UNITE_VERTICALE);
+		
+		demarrerNouveauDessinAvecDesPoints()
+		.ajouter(origine)
+		.ajouter(origine2)
+		.ajouter(origine3);
 	}
 	
+	/**
+	 * 
+	 */
 	public void dessinerPiedsJambes() {
 		
 	}
 	
+	/**
+	 * 
+	 */
 	public void dessinerTorseBras() {
 		
 	}
 	
+	/**
+	 * 
+	 */
 	public void dessinerVisage() {
 		
 	}
 	
+	/**
+	 * 
+	 */
 	public void dessinerCheveux() {
 		
 	}
