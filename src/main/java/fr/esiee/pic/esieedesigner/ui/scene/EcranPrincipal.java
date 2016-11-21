@@ -9,6 +9,7 @@ import fr.esiee.pic.esieedesigner.design.exemple.PersonnageManga;
 import fr.esiee.pic.esieedesigner.design.shared.Grille;
 import fr.esiee.pic.esieedesigner.design.tp2.DessinsGroupe1;
 import fr.esiee.pic.esieedesigner.design.tp2.DessinsGroupe2;
+import fr.esiee.pic.esieedesigner.design.tp2.DessinsGroupe3;
 import fr.esiee.pic.esieedesigner.ui.tools.AfficheurDeFormes;
 
 /**
@@ -73,7 +74,7 @@ public final class EcranPrincipal {
 	 * Initialisation des formes à dessiner
 	 */
 	private void init() {
-		 initDemo();
+		initDemo();
 		
 		// Affichage des dessins du groupe 1
 		DessinsGroupe1 grp1 = new DessinsGroupe1();
@@ -95,6 +96,7 @@ public final class EcranPrincipal {
 		// Affichage de la démo : personnage manga
 		PersonnageManga demoManga = new PersonnageManga();
 		listDeDessins.add(demoManga);
+		
 	}
 	
 	/**
