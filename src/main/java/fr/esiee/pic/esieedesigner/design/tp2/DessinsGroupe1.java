@@ -1,5 +1,6 @@
 package fr.esiee.pic.esieedesigner.design.tp2;
 
+import fr.esiee.pic.esieedesigner.api.shapes.Point;
 import fr.esiee.pic.esieedesigner.api.tools.CreateurDeForme;
 
 /**
@@ -9,6 +10,25 @@ import fr.esiee.pic.esieedesigner.api.tools.CreateurDeForme;
  *
  */
 public class DessinsGroupe1 extends CreateurDeForme {
+	/**
+	 * Pas de dessin horizontale
+	 */
+	private static final double UNITE_HORIZONTALE = 25;
+	
+	/**
+	 * Pas de dessin verticale
+	 */
+	private static final double UNITE_VERTICALE = 25;
+	
+	/**
+	 * Coordonnées X de l'origine
+	 */
+	private static final double ORIGINE_X = 2;
+	
+	/**
+	 * Coordonnées Y de l'origine
+	 */
+	private static final double ORIGINE_Y = 2;
 
 	@Override
 	public void dessiner() {
@@ -19,20 +39,79 @@ public class DessinsGroupe1 extends CreateurDeForme {
 		dessinerTorseBras();
 		dessinerVisage();
 		dessinerCheveux();
-	}
-	
-	public void dessinerPiedsJambes() {
 		
+		Point origine = new Point(ORIGINE_X * UNITE_HORIZONTALE, ORIGINE_Y * UNITE_VERTICALE);
+		Point origine2 = new Point(ORIGINE_X * UNITE_HORIZONTALE, (ORIGINE_Y + 1) * UNITE_VERTICALE);
+		Point origine3 = new Point((ORIGINE_X + 1) * UNITE_HORIZONTALE, ORIGINE_Y * UNITE_VERTICALE);
+		
+		demarrerNouveauDessinAvecDesPoints()
+		.ajouter(origine)
+		.ajouter(origine2)
+		.ajouter(origine3);
 	}
 	
+	/**
+	 * 
+	 */
+	public void dessinerPiedsJambes() {
+
+		
+<<<<<<< HEAD
+		Point PiedGauche1 = new Point(5 * UNITE_VERTICALE, 14 * UNITE_VERTICALE);
+		Point PiedGauche2 = new Point(6 * UNITE_VERTICALE, 13 * UNITE_VERTICALE);
+		Point PiedGauche3 = new Point(7 * UNITE_VERTICALE, 13 * UNITE_VERTICALE);
+		Point PiedGauche4 = new Point(7 * UNITE_VERTICALE, 14 * UNITE_VERTICALE);
+		
+		Point PiedDroit1 = new Point(7 * UNITE_VERTICALE, 14 * UNITE_VERTICALE);
+		Point PiedDroit2 = new Point(7 * UNITE_VERTICALE, 13 * UNITE_VERTICALE);
+		Point PiedDroit3 = new Point(8 * UNITE_VERTICALE, 13 * UNITE_VERTICALE);
+		Point PiedDroit4 = new Point(9 * UNITE_VERTICALE, 14 * UNITE_VERTICALE);
+		
+		demarrerNouveauDessinAvecDesPoints()
+		.ajouter(PiedGauche1)
+		.ajouter(PiedGauche2)
+		.ajouter(PiedGauche3)
+		.ajouter(PiedGauche4)
+		.ajouter(PiedDroit1)
+		.ajouter(PiedDroit2)
+		.ajouter(PiedDroit3)
+		.ajouter(PiedDroit4);
+		
+		
+
+=======
+		Point mainGauchePointGauche = new Point(ORIGINE_X * UNITE_HORIZONTALE, (ORIGINE_Y + 11) * UNITE_VERTICALE);
+		Point mainGauchePointCentre = new Point((ORIGINE_X + 1) * UNITE_HORIZONTALE, (ORIGINE_Y + 11) * UNITE_VERTICALE);
+		Point mainGauchePointBas = new Point((ORIGINE_X + 1) * UNITE_HORIZONTALE, (ORIGINE_Y + 12) * UNITE_VERTICALE);
+		Point mainGauchePointDroite = new Point((ORIGINE_X + 2) * UNITE_HORIZONTALE, (ORIGINE_Y + 11) * UNITE_VERTICALE);
+		Point mainGauchePointHaut = new Point((ORIGINE_X + 1) * UNITE_HORIZONTALE, (ORIGINE_Y + 10) * UNITE_VERTICALE);
+		
+		demarrerNouveauDessinAvecDesPoints()
+		.ajouter(mainGauchePointGauche)
+		.ajouter(mainGauchePointCentre)
+		.ajouter(mainGauchePointBas)
+		.ajouter(mainGauchePointDroite)
+		.ajouter(mainGauchePointHaut);
+>>>>>>> f251fab13ec5d9c4055e749e7250e4c0a61cb054
+	}
+	
+	/**
+	 * 
+	 */
 	public void dessinerTorseBras() {
 		
 	}
 	
+	/**
+	 * 
+	 */
 	public void dessinerVisage() {
 		
 	}
 	
+	/**
+	 * 
+	 */
 	public void dessinerCheveux() {
 		
 	}
