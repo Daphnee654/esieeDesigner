@@ -97,6 +97,7 @@ public final class EcranPrincipal {
 		// Affichage de la démo : personnage manga
 		PersonnageManga demoManga = new PersonnageManga();
 		listDeDessins.add(demoManga);
+		
 	}
 	
 	/**

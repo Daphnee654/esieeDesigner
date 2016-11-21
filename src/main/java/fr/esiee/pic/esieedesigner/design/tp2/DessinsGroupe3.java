@@ -31,16 +31,36 @@ public class DessinsGroupe3 extends CreateurDeForme {
 	
 	private static final int BASE_GAUCHE = LONGUEUR_PAGE/2 - LONGUEUR_PERSO/2;
 
-	
-	private static final Point BASE_NEZ_HAUT = new Point(950, 750);
-
+	public void dessinVisage(){
+		Point ptVisage1 = new Point(BASE_GAUCHE+(3*PIXEL),BASE_HAUT+(4*PIXEL));
+		Point ptVisage2 = new Point(BASE_GAUCHE+(3*PIXEL),BASE_HAUT+(7*PIXEL));
+		Point ptVisage3 = new Point(BASE_GAUCHE+(6*PIXEL),BASE_HAUT+(10*PIXEL));
+		Point ptVisage4 = new Point(BASE_GAUCHE+(8*PIXEL),BASE_HAUT+(10*PIXEL));
+		Point ptVisage5 = new Point(BASE_GAUCHE+(11*PIXEL),BASE_HAUT+(7*PIXEL));
+		Point ptVisage6 = new Point(BASE_GAUCHE+(11*PIXEL),BASE_HAUT+(4*PIXEL));
+		Point ptVisage7 = new Point(BASE_GAUCHE+(9*PIXEL),BASE_HAUT+(5*PIXEL));
+		Point ptVisage8 = new Point(BASE_GAUCHE+(7*PIXEL),BASE_HAUT+(4*PIXEL));
+		Point ptVisage9 = new Point(BASE_GAUCHE+(5*PIXEL),BASE_HAUT+(5*PIXEL));
+		Point ptVisage10 = new Point(BASE_GAUCHE+(3*PIXEL),BASE_HAUT+(4*PIXEL));
+		demarrerNouveauDessinAvecDesPoints()
+		.ajouter(ptVisage1)
+		.ajouter(ptVisage2)
+		.ajouter(ptVisage3)
+		.ajouter(ptVisage4)
+		.ajouter(ptVisage5)
+		.ajouter(ptVisage6)
+		.ajouter(ptVisage7)
+		.ajouter(ptVisage8)
+		.ajouter(ptVisage9)
+		.ajouter(ptVisage10);
+	}
 
 	@Override
 	public void dessiner() {
 		// Ajout vos dessins ici
 		// Pensez à désactiver les dessins de la démo 
 		// en commentant initDemo dans le méthode init()de la classe fr.esiee.pic.esieedesigner.ui.scene.EcranPrincipal
-		
+
 			
 		Point hautGauche = new Point(BASE_GAUCHE, BASE_HAUT);
 		Point hautDroit = new Point(BASE_DROITE, BASE_HAUT);
@@ -54,7 +74,8 @@ public class DessinsGroupe3 extends CreateurDeForme {
 		.ajouter(basGauche);
 		
 		dessinerCorp();
-	
+        dessinerCheveux();
+		dessinVisage();
 	}
 	
 	/**
@@ -139,5 +160,70 @@ public class DessinsGroupe3 extends CreateurDeForme {
 		.ajouter(p24)
 		.ajouter(p25);
 	}
+
+    
+    private void dessinerCheveux(){
+        Point baseCheveux = new Point(BASE_GAUCHE, BASE_HAUT+PIXEL);
+        Point cheveux1 = new Point(BASE_GAUCHE+PIXEL, BASE_HAUT);
+        Point cheveux2 = new Point(BASE_DROITE-PIXEL, BASE_HAUT);
+        Point cheveux3 = new Point(BASE_DROITE, BASE_HAUT+PIXEL);
+        Point cheveux4 = new Point(BASE_DROITE, BASE_HAUT+3*PIXEL);
+        Point cheveux5 = new Point(BASE_DROITE-1*PIXEL, BASE_HAUT+7*PIXEL);
+        Point cheveux6 = new Point(BASE_DROITE-2*PIXEL, BASE_HAUT+7*PIXEL);
+        Point cheveux7 = new Point(BASE_DROITE-3*PIXEL, BASE_HAUT+6*PIXEL);
+        Point cheveux8 = new Point(BASE_DROITE-3*PIXEL, BASE_HAUT+3*PIXEL);
+        Point cheveux9 = new Point(BASE_DROITE-5*PIXEL, BASE_HAUT+2*PIXEL);
+        Point cheveux10 = new Point(BASE_DROITE-7*PIXEL, BASE_HAUT+3*PIXEL);
+        Point cheveux11 = new Point(BASE_GAUCHE+5*PIXEL, BASE_HAUT+2*PIXEL);
+        Point cheveux12 = new Point(BASE_GAUCHE+3*PIXEL, BASE_HAUT+3*PIXEL);
+        Point cheveux13 = new Point(BASE_GAUCHE+3*PIXEL, BASE_HAUT+6*PIXEL);
+        Point cheveux14 = new Point(BASE_GAUCHE+2*PIXEL, BASE_HAUT+7*PIXEL);
+        Point cheveux15 = new Point(BASE_GAUCHE+1*PIXEL, BASE_HAUT+7*PIXEL);
+        Point cheveux16 = new Point(BASE_GAUCHE, BASE_HAUT+3*PIXEL);
+        Point cheveux17 = new Point(BASE_GAUCHE, BASE_HAUT+1*PIXEL);
+
+
+        demarrerNouveauDessinAvecDesPoints()
+        .ajouter(baseCheveux)
+        .ajouter(cheveux1)
+        .ajouter(cheveux2)
+        .ajouter(cheveux3)
+        .ajouter(cheveux4)
+        .ajouter(cheveux5)
+        .ajouter(cheveux6)
+        .ajouter(cheveux7)
+        .ajouter(cheveux8)
+        .ajouter(cheveux9)
+        .ajouter(cheveux10)
+        .ajouter(cheveux11)
+        .ajouter(cheveux12)
+        .ajouter(cheveux13)
+        .ajouter(cheveux14)
+        .ajouter(cheveux15)
+        .ajouter(cheveux16)
+        .ajouter(cheveux17);
+
+
+
+        
+    }
+    
+    private void dessinerCadre(){
+
+        Point hautGauche = new Point(BASE_GAUCHE, BASE_HAUT);
+        Point hautDroit = new Point(BASE_DROITE, BASE_HAUT);
+        Point basGauche = new Point(BASE_GAUCHE, BASE_BAS);
+        Point basDroite = new Point(BASE_DROITE, BASE_BAS);
+        
+        demarrerNouveauDessinAvecDesPoints()
+        .ajouter(hautGauche)
+        .ajouter(hautDroit)
+        .ajouter(basDroite)
+        .ajouter(basGauche);
+
+    
+    }
+    
+ 
 
 }
