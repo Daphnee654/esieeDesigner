@@ -101,6 +101,13 @@ public class DessinsGroupe1 extends CreateurDeForme {
 		Point mainGauchePointDroite = new Point((ORIGINE_X + 2) * UNITE_HORIZONTALE, (ORIGINE_Y + 11) * UNITE_VERTICALE);
 		Point mainGauchePointHaut = new Point((ORIGINE_X + 1) * UNITE_HORIZONTALE, (ORIGINE_Y + 10) * UNITE_VERTICALE);
 		
+		demarrerNouveauDessinAvecDesPoints()
+		.ajouter(mainGauchePointGauche)
+		.ajouter(mainGauchePointCentre)
+		.ajouter(mainGauchePointBas)
+		.ajouter(mainGauchePointDroite)
+		.ajouter(mainGauchePointHaut);
+		
 		Point epauleGaucheGauche = new Point((ORIGINE_X + 3) * UNITE_HORIZONTALE, (ORIGINE_Y + 8) * UNITE_VERTICALE);
 		Point epauleGaucheDroit = new Point((ORIGINE_X + 4) * UNITE_HORIZONTALE, (ORIGINE_Y + 8) * UNITE_VERTICALE);
 		
@@ -124,11 +131,11 @@ public class DessinsGroupe1 extends CreateurDeForme {
 		.ajouter(epauleGaucheGauche);
 		
 		
-		Point mainDroitePointGauche = new Point(ORIGINE_X * UNITE_HORIZONTALE, (ORIGINE_Y + 11) * UNITE_VERTICALE);
-		Point mainDroitePointCentre = new Point((ORIGINE_X + 1) * UNITE_HORIZONTALE, (ORIGINE_Y + 11) * UNITE_VERTICALE);
-		Point mainDroitePointBas = new Point((ORIGINE_X + 1) * UNITE_HORIZONTALE, (ORIGINE_Y + 12) * UNITE_VERTICALE);
-		Point mainDroitePointDroite = new Point((ORIGINE_X + 2) * UNITE_HORIZONTALE, (ORIGINE_Y + 11) * UNITE_VERTICALE);
-		Point mainDroitePointHaut = new Point((ORIGINE_X + 1) * UNITE_HORIZONTALE, (ORIGINE_Y + 10) * UNITE_VERTICALE);
+		Point mainDroitePointGauche = new Point((ORIGINE_X+12) * UNITE_HORIZONTALE, (ORIGINE_Y + 11) * UNITE_VERTICALE);
+		Point mainDroitePointCentre = new Point((ORIGINE_X + 13) * UNITE_HORIZONTALE, (ORIGINE_Y + 11) * UNITE_VERTICALE);
+		Point mainDroitePointBas = new Point((ORIGINE_X + 13) * UNITE_HORIZONTALE, (ORIGINE_Y + 12) * UNITE_VERTICALE);
+		Point mainDroitePointDroite = new Point((ORIGINE_X + 14) * UNITE_HORIZONTALE, (ORIGINE_Y + 11) * UNITE_VERTICALE);
+		Point mainDroitePointHaut = new Point((ORIGINE_X + 13) * UNITE_HORIZONTALE, (ORIGINE_Y + 10) * UNITE_VERTICALE);
 		
 		
 		
@@ -154,16 +161,20 @@ public class DessinsGroupe1 extends CreateurDeForme {
 	 * 
 	 */
 	public void dessinerCheveux() {
+		Point craneBasGauche = new Point((ORIGINE_X + 1) * UNITE_HORIZONTALE, (ORIGINE_Y + 3) * UNITE_VERTICALE);
 		Point craneMilieuGauche = new Point((ORIGINE_X + 3) * UNITE_HORIZONTALE, (ORIGINE_Y + 1) * UNITE_VERTICALE);
 		Point craneHautGauche = new Point((ORIGINE_X + 5) * UNITE_HORIZONTALE, ORIGINE_Y * UNITE_VERTICALE);
 		Point craneHautDroite = new Point((ORIGINE_X + 9) * UNITE_HORIZONTALE, ORIGINE_Y * UNITE_VERTICALE);
 		Point craneMilieuDroite = new Point((ORIGINE_X + 11) * UNITE_HORIZONTALE, (ORIGINE_Y + 1) * UNITE_VERTICALE);
+		Point craneBasDroite = new Point((ORIGINE_X + 13) * UNITE_HORIZONTALE, (ORIGINE_Y + 3) * UNITE_VERTICALE);
 		
 		demarrerNouveauDessinAvecDesPoints()
+		.ajouter(craneBasGauche)
 		.ajouter(craneMilieuGauche)
 		.ajouter(craneHautGauche)
 		.ajouter(craneHautDroite)
-		.ajouter(craneMilieuDroite);
+		.ajouter(craneMilieuDroite)
+		.ajouter(craneBasDroite);
 	}
 
 }
